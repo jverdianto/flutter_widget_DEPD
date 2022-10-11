@@ -164,10 +164,10 @@ class _BookingState extends State<Booking> {
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text("Name: " + ctrlFullName.text.toString()),
-          Text("Email: " + ctrlEmail.text.toString()),
-          Text("Phone: " + ctrlPhoneNumber.text.toString()),
-          Text("City: " + ctrlCity.text.toString()),
+          Text("Name: " + ctrlFullName.text.toString() 
+          + "\nEmail: " + ctrlEmail.text.toString()
+          + "\nPhone: " + ctrlPhoneNumber.text.toString()
+          + "\nCity: " + ctrlCity.text.toString()),
         ],
       ),
       actions: <Widget>[
