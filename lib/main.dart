@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget_part1/views/home.dart';
+import 'package:flutter_widget_part1/views/pages.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +11,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomePage(),
+        Booking.routeName: (context) => Booking()
+      },
     );
   }
+
+  
+
 }
